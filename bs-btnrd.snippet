@@ -1,15 +1,15 @@
 # -*- mode: snippet -*-
-# name: bootstrap radio buttons template.
+# name: bs-btnrd
 # key: bs-btnrd
 # --
 <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+  <label class="btn ${1:$$(yas-choose-value '("btn-link" "btn-danger" "btn-warning" "btn-info" "btn-success" "btn-secondary" "btn-primary"))} active">
+    <input type="radio" name="${2:options}" autocomplete="off" checked> ${3:Radio 1 (preselected)}
   </label>
-  <label class="btn btn-primary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+  <label class="btn $1">
+    <input type="radio" name="$2" id="option2" autocomplete="off"> ${4:Radio 2}
   </label>
-  <label class="btn btn-primary">
-    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+  <label class="btn $1">
+    <input type="radio" name="$2" id="option3" autocomplete="off"> ${5:Radio 3}
   </label>
 </div>

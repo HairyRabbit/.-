@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: bootstrap pill label.
+# name: bs-lbp
 # key: bs-lbp
 # --
-<span class="label label-pill label-default">${1:content}</span>
+<span class="label label-pill ${1:$$(yas-choose-value '("label-danger" "label-warning" "label-info" "label-success" "label-default" "label-primary"))}">${2:content}</span>

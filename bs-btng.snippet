@@ -1,9 +1,9 @@
 # -*- mode: snippet -*-
-# name: bootstrap button group.
+# name: bs-btng
 # key: bs-btng
 # --
 <div class="btn-group" role="group">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
+  <button type="button" class="btn ${1:$$(yas-choose-value '("btn-link" "btn-danger" "btn-warning" "btn-info" "btn-success" "btn-secondary" "btn-primary"))}">${2:Left}</button>
+  <button type="button" class="btn $1">${3:Middle}</button>
+  <button type="button" class="btn $1">${4:Right}</button>
 </div>

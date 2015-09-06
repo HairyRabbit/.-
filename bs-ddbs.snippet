@@ -1,10 +1,10 @@
 # -*- mode: snippet -*-
-# name: bootstrap dropdowns with split button.
+# name: bs-ddbs
 # key: bs-ddbs
 # --
 <div class="btn-group">
-  <button type="button" class="btn btn-primary">Action</button>
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn ${1:$$(yas-choose-value '("btn-link" "btn-danger" "btn-warning" "btn-info" "btn-success" "btn-secondary" "btn-primary"))}">${2:Action}</button>
+  <button type="button" class="btn $1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <div class="dropdown-menu">

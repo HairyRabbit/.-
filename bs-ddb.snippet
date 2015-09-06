@@ -1,10 +1,10 @@
 # -*- mode: snippet -*-
-# name: bootstrap dropdowns.
+# name: bs-ddb
 # key: bs-ddb
 # --
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action
+  <button type="button" class="btn ${1:$$(yas-choose-value '("btn-link" "btn-danger" "btn-warning" "btn-info" "btn-success" "btn-secondary" "btn-primary"))} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ${2:Action}
   </button>
   <div class="dropdown-menu">
     <a class="dropdown-item" href="#">Action</a>

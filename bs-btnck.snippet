@@ -1,15 +1,15 @@
 # -*- mode: snippet -*-
-# name: bootstrap checkbox buttons template.
+# name: bs-btnck
 # key: bs-btnck
 # --
 <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary active">
-    <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+  <label class="btn ${1:$$(yas-choose-value '("btn-link" "btn-danger" "btn-warning" "btn-info" "btn-success" "btn-secondary" "btn-primary"))} active">
+    <input type="checkbox" name="${2:options}" checked autocomplete="off"> ${3:Checkbox 1 (pre-checked)}
   </label>
-  <label class="btn btn-primary">
-    <input type="checkbox" autocomplete="off"> Checkbox 2
+  <label class="btn $1">
+    <input type="checkbox" name="$2" autocomplete="off"> ${4:Checkbox 2}
   </label>
-  <label class="btn btn-primary">
-    <input type="checkbox" autocomplete="off"> Checkbox 3
+  <label class="btn $1">
+    <input type="checkbox" name="$2" autocomplete="off"> ${5:Checkbox 3}
   </label>
 </div>

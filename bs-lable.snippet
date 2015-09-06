@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: bootstrap label.
+# name: bs-lb
 # key: bs-lb
 # --
-<span class="label label-default">${1:content}</span>
+<span class="label ${1:$$(yas-choose-value '("label-danger" "label-warning" "label-info" "label-success" "label-default" "label-primary"))}">${2:content}</span>

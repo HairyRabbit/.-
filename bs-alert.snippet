@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: bootstrap alert.
+# name: bs-al
 # key: bs-al
 # --
-<div class="alert alert-success" role="alert">
-  <strong>${1:Alert label}</strong> ${2:Alert message.}
+<div class="alert ${1:$$(yas-choose-value '("alert-danger" "alert-warning" "alert-info" "alert-success"))}" role="alert">
+  <strong>${3:Alert label}</strong> ${3:Alert message.}
 </div>

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: bs-cd
+# key: bs-cd
+# --
+<div class="card ${1:$$(yas-choose-value '("card-inverse" ""))} ${2:$$(yas-choose-value '("btn-danger" "btn-warning" "btn-info" "btn-success" "btn-primary" ""))}">
+  <img class="card-img-top" src="${3:image src}" alt="${4:image alert}"><!-- /.card-img -->
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">${5:Some quick example text to build on the card title and make up the bulk of the card's content.}</p>
+    <a href="#" class="btn btn-primary">${6:Button}</a>
+  </div><!-- /.card-block -->  
+</div>

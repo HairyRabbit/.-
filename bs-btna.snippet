@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: bootstrap link button template.
+# name: bs-btna
 # key: bs-btna
 # --
-<a href="${3:#}" role="button" class="btn ${2:btn-primary}">${1:button content}</a>
+<a href="${3:#}" role="button" class="btn ${1:$$(yas-choose-value '("btn-link" "btn-danger" "btn-warning" "btn-info" "btn-success" "btn-secondary" "btn-primary"))}">${2:button content}</a>
