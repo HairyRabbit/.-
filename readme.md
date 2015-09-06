@@ -2,14 +2,16 @@
 
 ## html-mode
 
-	comment snippets
+[![asciicast](https://asciinema.org/a/cuyy8o7ubezbxkdz2gjp0g0dr.png)](https://asciinema.org/a/cuyy8o7ubezbxkdz2gjp0g0dr)
+
+comment snippets
 
 * ;; Line comment.
 * ;;; Block comment.
 
 ### bootstrap v4
 
-	prefix: bs-
+prefix: bs-
 
 * bs-start Start page.
 * bs-con Container.
