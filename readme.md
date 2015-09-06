@@ -1,4 +1,7 @@
-# emacs yasnippet snippets
+# emacs snippets
+
+bootstrap v4
+prefix: bs-
 
 ## html-mode
 
