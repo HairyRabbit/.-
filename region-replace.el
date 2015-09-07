@@ -1,20 +1,13 @@
-(defun yufi/region-replace (fn)
-  "replace region content"
-  (let ((region-begin (region-beginning))
-	(region-end (region-end)))
-    (let ((content (buffer-substring region-begin region-end)))
-      (setq content (funcall fn content))
-      (delete-region region-begin region-end)
-      (insert content)
-      content)))
+(require 'dash)
+(require 'dash-functional)
+(require 's)
 
-
-
-(defun yufi/tag-wrap ()
-  ""
-  (interactive)
-  (let ((tag (read-from-minibuffer "warp tag: " "div")))
-    (yufi/region-replace (lambda (x)
-			   (concat "<" tag ">\n\t" x "\n</" tag ">")))))
+(defun yufi/replace-region (fn)
+  "replace region content."
+  (-let ((beg (region-beginning))
+	 (end (region-end))
+	 (ct (buffer-substring (region-beginning) (region-end))))
+    (delete-region beg end)
+    (->> ct (funcall fn) insert)))
 		       
-(provide 'region-replace)
+(provide 'yufi)
